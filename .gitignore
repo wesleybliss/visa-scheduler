@@ -1,0 +1,39 @@
+# Node
+node_modules
+package-lock.json
+yarn-error.log
+
+# Environment
+.env*
+.idea
+.vscode
+
+# Builds
+dist
+build
+build-info.json
+build-report.json
+
+# Tests
+.nyc_output
+coverage
+
+# Misc
+.DS_Store
+backups
+*.pem
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Debug
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+
+# Vercel
+.vercel
