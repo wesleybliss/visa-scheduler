@@ -2,9 +2,25 @@
   "name": "visa-col-scheduler",
   "version": "1.0.0",
   "main": "src/index.js",
-  "license": "MIT",
+  "private": true,
+  "license": "UNLICENCED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+    "@vercel/kv": "^1.0.1",
+    "autoprefixer": "^10.4.16",
     "axios": "^1.6.2",
-    "puppeteer": "^21.6.1"
+    "cssnano": "^6.0.2",
+    "ms": "^2.1.3",
+    "next": "^14.0.4",
+    "puppeteer": "^21.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.0"
   }
 }

@@ -1,4 +1,4 @@
-import './typedefs'
+import '../typedefs'
 import * as puppeteerTypes from 'puppeteer/lib/types.d.ts'
 import axios from 'axios'
 
