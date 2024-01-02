@@ -1,41 +1,25 @@
 import Post from '@components/post'
 import Head from 'next/head'
+import { getBaseUrl } from '@utils'
+
+export async function getServerSideProps({ req, query }) {
+    
+    const base = getBaseUrl(req)
+    const url = `${base}/api/data/1d`
+    
+    const res = await fetch(url)
+    const data = await res.json()
+    
+    // Pass data to the page via props
+    return { props: { data } }
+    
+}
 
 const intervals = [
-    {
-        id: '1m',
-        name: 'Every Minute',
-        cron: '* * * * *',
-    },
-    {
-        id: '10m',
-        name: 'Every 10 mins',
-        cron: '*/10 * * * *',
-    },
-    {
-        id: '1h',
-        name: 'Every Hour',
-        cron: '0 * * * *',
-    },
-    {
-        id: '12h',
-        name: 'Every 12 hours',
-        cron: '0 */12 * * *',
-    },
     {
         id: '1d',
         name: 'Every Day',
         cron: '0 0 * * *',
-    },
-    {
-        id: '1w',
-        name: 'Every Week',
-        cron: '0 0 * * 0',
-    },
-    {
-        id: '1mo',
-        name: 'Every Month',
-        cron: '0 0 1 * *',
     },
 ]
 

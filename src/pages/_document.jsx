@@ -8,7 +8,7 @@ const Document = () => {
             
             <Head/>
             
-            <body className="bg-white dark:bg-black">
+            <body className="">
                 <Main/>
                 <NextScript/>
             </body>

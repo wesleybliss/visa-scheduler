@@ -13,9 +13,9 @@ const timeAgo = time => {
     
 }
 
-const Post = ({interval}) => {
+const Post = ({ data }) => {
     
-    const {data} = { data: 'todo'}
+    // const {data} = { data: 'todo'}
     
     if (!data)
         return (
